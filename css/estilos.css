@@ -1,0 +1,208 @@
+*/* selector global*/{
+    margin: 0; /*margen externo*/
+    padding: 0; /* margen interno*/
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: linear-gradient(to left top, black, white);
+}
+
+body img{
+
+    width: 90%;
+    height: 150px;
+    margin-left: 50px;
+    align-content: center;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: red;
+    font-size: 15px;
+    padding: 5px;
+}
+
+h1.titulo{
+
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: azure;
+}
+
+/* usamos flexbox */
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.navegacion li{
+    color:white;
+    font-size: 30px;
+    
+}
+
+.navegacion li:hover{
+    background-color: red;
+    border-radius: 20px;
+}
+
+header {
+    background-image: linear-gradient(to left, black, red);
+    padding: 5px;
+    color: white;
+    
+}
+
+.borde_redondo{
+    border-radius: 5px;
+}
+
+.promociones ul img{
+
+    width: 150px; height: 150px;
+    display: block;
+    margin: auto;
+
+}
+
+.promociones ul p{
+    text-align: center;
+    font-weight: bold;
+}
+
+p.tituloPromocion{
+    text-align: center;
+    background-color:olivedrab;
+    padding:5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    margin:5px;
+}
+
+.conocenos section p{
+    color: white;
+    text-align: justify;
+}
+
+form{
+    text-align: center;
+    background-color: peachpuff;
+    padding:10px;
+}
+
+.categorias div{
+    text-align: center;
+    background-color: seagreen;
+    font-weight: bold;
+    font-size: 20px;
+    padding:5px;
+    margin: 5px;
+    font-style: italic;
+}
+
+.categorias .navegacion li{
+    color:black;
+    font-size: 25px;
+    align-content: center;
+    padding:5px
+}
+
+.link{
+    color:blanchedalmond;
+    
+}
+
+.centrar{
+    text-align: center;
+}
+
+/* aplicamos Grid para posicionar las imagenes */
+
+h5{
+    color: black;
+}
+
+.precio{
+    color: black;
+    font-size: 20px;
+}
+
+#grilla li{
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* Smartphone */
+@media (max-width: 480px){
+    #grilla{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .navegacion li{
+        color:white;
+        font-size: 15px;
+    }
+    
+
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px){
+    #grilla{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .navegacion li{
+        color:white;
+        font-size: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+    #grilla{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+        
+    }
+}
+
+/* animacion para el titulo */
+
+h1 {
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    from {
+        opacity: 0;
+        transform: translate(-350px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
