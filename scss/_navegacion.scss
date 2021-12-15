@@ -1,0 +1,27 @@
+/* Estilos de barra de navegacion */
+
+@mixin estilo($color, $font_size){
+    color: $color;
+    font-size: $font_size;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.navegacion {
+    li{
+        @include estilo(white,30px);
+    }
+}
+
+.navegacion{
+    li:hover{
+        background-color: red;
+        border-radius: 20px;
+    }
+}
+

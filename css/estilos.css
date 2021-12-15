@@ -1,208 +1,176 @@
-*/* selector global*/{
-    margin: 0; /*margen externo*/
-    padding: 0; /* margen interno*/
-    font-family: 'Lato', sans-serif;
-}
+/* Metodologia bem*/
+.conocenos {
+  color: white; }
 
-body{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-image: linear-gradient(to left top, black, white);
-}
+.conocenos__titulo {
+  text-align: center;
+  background-color: olivedrab;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  margin: 5px; }
 
-body img{
+/* reseteo general */
+* {
+  margin: 0;
+  /*margen externo*/
+  padding: 0;
+  /* margen interno*/
+  font-family: 'Lato', sans-serif; }
 
-    width: 90%;
-    height: 150px;
-    margin-left: 50px;
-    align-content: center;
-}
+/* configuracion del body */
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: linear-gradient(to left top, black, white); }
 
-footer{
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: red;
-    font-size: 15px;
-    padding: 5px;
-}
+body img {
+  width: 90%;
+  height: 150px;
+  margin-left: 50px;
+  align-content: center; }
 
-h1.titulo{
+/* estilos generales*/
+h5 {
+  color: black; }
 
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: azure;
-}
+.precio {
+  color: black;
+  font-size: 20px; }
 
-/* usamos flexbox */
-.navegacion{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+#grilla li {
+  padding: 10px; }
 
+li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px; }
 
-.navegacion li{
-    color:white;
-    font-size: 30px;
-    
-}
+.link {
+  color: blanchedalmond; }
 
-.navegacion li:hover{
-    background-color: red;
-    border-radius: 20px;
-}
+.centrar {
+  text-align: center; }
+
+.categorias div {
+  text-align: center;
+  background-color: seagreen;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  font-style: italic; }
+
+.categorias .navegacion li {
+  color: black;
+  font-size: 25px;
+  align-content: center;
+  padding: 5px; }
+
+h1 .titulo {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: azure; }
+
+h1 .borde_redondo {
+  border-radius: 5px; }
 
 header {
-    background-image: linear-gradient(to left, black, red);
-    padding: 5px;
-    color: white;
-    
-}
+  background-image: linear-gradient(to left, black, red);
+  padding: 5px;
+  color: white; }
 
-.borde_redondo{
-    border-radius: 5px;
-}
+.promociones ul img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto; }
 
-.promociones ul img{
+.promociones ul p {
+  text-align: center;
+  font-weight: bold; }
 
-    width: 150px; height: 150px;
-    display: block;
-    margin: auto;
+p.tituloPromocion {
+  text-align: center;
+  background-color: olivedrab;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  margin: 5px; }
 
-}
+.conocenos section p {
+  color: white;
+  text-align: justify; }
 
-.promociones ul p{
-    text-align: center;
-    font-weight: bold;
-}
+/* Estilos de barra de navegacion */
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
-p.tituloPromocion{
-    text-align: center;
-    background-color:olivedrab;
-    padding:5px;
-    font-weight: bold;
-    font-size: 20px;
-    font-style: italic;
-    margin:5px;
-}
+.navegacion li {
+  color: white;
+  font-size: 30px; }
 
-.conocenos section p{
-    color: white;
-    text-align: justify;
-}
-
-form{
-    text-align: center;
-    background-color: peachpuff;
-    padding:10px;
-}
-
-.categorias div{
-    text-align: center;
-    background-color: seagreen;
-    font-weight: bold;
-    font-size: 20px;
-    padding:5px;
-    margin: 5px;
-    font-style: italic;
-}
-
-.categorias .navegacion li{
-    color:black;
-    font-size: 25px;
-    align-content: center;
-    padding:5px
-}
-
-.link{
-    color:blanchedalmond;
-    
-}
-
-.centrar{
-    text-align: center;
-}
-
-/* aplicamos Grid para posicionar las imagenes */
-
-h5{
-    color: black;
-}
-
-.precio{
-    color: black;
-    font-size: 20px;
-}
-
-#grilla li{
-    padding: 10px;
-}
-
-li{
-    list-style-type: none;
-    padding: 5px;
-    margin: 5px;
-}
-
-
-/* Smartphone */
-@media (max-width: 480px){
-    #grilla{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .navegacion li{
-        color:white;
-        font-size: 15px;
-    }
-    
-
-}
-
-/* Tablet */
-@media (min-width: 600px) and (max-width: 1023px){
-    #grilla{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    .navegacion li{
-        color:white;
-        font-size: 20px;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px){
-    #grilla{
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    
-        
-    }
-}
+.navegacion li:hover {
+  background-color: red;
+  border-radius: 20px; }
 
 /* animacion para el titulo */
-
 h1 {
-    text-align: center;
-    animation-duration: 2s;
-    animation-name: aparecer;
-}
+  text-align: center;
+  animation-duration: 2;
+  animation-name: aparecer; }
 
-@keyframes aparecer{
-    from {
-        opacity: 0;
-        transform: translate(-350px);
-    }
-    to{
-        opacity: 1;
-    }
-}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translate(-350px); }
+  to {
+    opacity: 1; } }
 
+/* configuracion responsive */
+/* Smartphone */
+@media (max-width: 480px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .navegacion li {
+    color: white;
+    font-size: 15px; } }
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+  .navegacion li {
+    color: white;
+    font-size: 20px; } }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; } }
+
+/* Configuracion del footer */
+footer {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: red;
+  font-size: 15px;
+  padding: 5px; }
+
+/* Estilos de formulario */
+form {
+  text-align: center;
+  background-color: peachpuff;
+  padding: 10px; }

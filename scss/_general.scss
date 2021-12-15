@@ -1,0 +1,118 @@
+/* estilos generales*/
+
+
+h5{
+    color: black;
+}
+
+.precio{
+    color: black;
+    font-size: 20px;
+}
+
+#grilla {
+    li{
+    padding: 10px;
+    }
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.link{
+    color:blanchedalmond;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.categorias{
+    div{
+        text-align: center;
+        background-color: seagreen;
+        font-weight: bold;
+        font-size: 20px;
+        padding:5px;
+        margin: 5px;
+        font-style: italic;
+    }
+}
+
+.categorias {
+    .navegacion {
+        li{
+        color:black;
+        font-size: 25px;
+        align-content: center;
+        padding:5px
+        }
+    }
+}
+
+h1 {
+    .titulo{
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        background-color: azure;
+    }
+}
+
+
+h1{
+    .borde_redondo{
+        border-radius: 5px;
+    }
+}
+
+header {
+    background-image: linear-gradient(to left, black, red);
+    padding: 5px;
+    color: white;
+}
+
+
+
+.promociones {
+    ul {
+        img{
+
+            width: 150px; height: 150px;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.promociones{
+    ul{
+        p{
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+
+p.tituloPromocion{
+    text-align: center;
+    background-color:olivedrab;
+    padding:5px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    margin:5px;
+}
+
+.conocenos{
+    section{
+        p{
+        color: white;
+        text-align: justify;
+        }
+    }
+}
+
+

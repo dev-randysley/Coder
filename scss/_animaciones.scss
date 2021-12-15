@@ -1,0 +1,21 @@
+/* animacion para el titulo */
+
+@mixin animation($duration, $name) {
+    animation-duration: $duration;
+    animation-name: $name;
+}
+
+h1 {
+    text-align: center;
+    @include animation(2,aparecer);
+}
+
+@keyframes aparecer{
+    from {
+        opacity: 0;
+        transform: translate(-350px);
+    }
+    to{
+        opacity: 1;
+    }
+}
