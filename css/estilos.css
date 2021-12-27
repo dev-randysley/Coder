@@ -21,11 +21,11 @@
 
 /* configuracion del body */
 body {
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 85%;
+  padding-left: 10%;
   margin-left: 20px;
   margin-right: 20px;
-  background-image: linear-gradient(to left top, black, white); }
+  background-color: #a19c9c; }
 
 body img {
   width: 70%;
@@ -79,6 +79,9 @@ h1 .titulo {
 h1 .borde_redondo {
   border-radius: 5px; }
 
+h2 {
+  color: black; }
+
 header {
   background-image: linear-gradient(to left, black, red);
   padding: 5px;
@@ -116,10 +119,12 @@ p.tituloPromocion {
 .navegacion li {
   color: white;
   font-size: 30px; }
+  .navegacion li a {
+    text-decoration: none; }
 
-.navegacion li:hover {
-  background-color: red;
-  border-radius: 20px; }
+#carouselExampleFade img {
+  max-width: auto;
+  max-height: 300px; }
 
 /* animacion para el titulo */
 h1 {
@@ -143,6 +148,8 @@ h1 {
     grid-template-rows: auto; }
   .navegacion li {
     color: white;
+    font-size: 15px; }
+  .navegacion .link {
     font-size: 15px; } }
 
 /* Tablet */

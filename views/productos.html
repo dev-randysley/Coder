@@ -16,66 +16,56 @@
     </head>
 
     <body>
-        <img src="https://thumbs.dreamstime.com/b/logo-de-la-bombilla-el%C3%A9ctrica-e-icono-logotipo-electricidad-y-simple-vectorial-171580685.jpg" alt="Logo de tienda"/>
-        <header>
-            <h1 class="borde_redondo">Lista de productos</h1>
-        </header>
         <hr>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">PROVEL</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link" href="conocenos.html">Conocenos</a>
-                        </li>
-                        <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
         <hr>
         
-        <!-- Inicio carrusel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators col-md-12 ">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <section class="promociones">
+          <p class="tituloPromocion borde_redondo"> Productos disponibles</p>
+          <div >
+              <ul id="grilla">
+                  <li><img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" alt="Zapatilla"> <p> Zapatilla</p></li>
+                  <li><img src="../img/disyuntor.jpg" alt="Disyuntor"><p> Disyuntor</p></li>  
+                  <li><img src="../img/capacitor.jpg" alt="termica"><p> Capacitor</p></li>             
+                  <li><img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" alt="Zapatilla"> <p> Zapatilla</p></li>
+                  <li><img src="../img/disyuntor.jpg" alt="Disyuntor"><p> Disyuntor</p></li>  
+                  <li><img src="../img/capacitor.jpg" alt="termica"><p> Capacitor</p></li>             
+                  <li><img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" alt="Zapatilla"> <p> Zapatilla</p></li>
+                  <li><img src="../img/disyuntor.jpg" alt="Disyuntor"><p> Disyuntor</p></li>  
+                  <li><img src="../img/capacitor.jpg" alt="termica"><p> Capacitor</p></li>             
+                  <li><img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" alt="Zapatilla"> <p> Zapatilla</p></li>
+                  <li><img src="../img/disyuntor.jpg" alt="Disyuntor"><p> Disyuntor</p></li>  
+                  <li><img src="../img/capacitor.jpg" alt="termica"><p> Capacitor</p></li>             
+                  <li><img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" alt="Zapatilla"> <p> Zapatilla</p></li>
+                  <li><img src="../img/disyuntor.jpg" alt="Disyuntor"><p> Disyuntor</p></li>  
+                  <li><img src="../img/capacitor.jpg" alt="termica"><p> Capacitor</p></li>             
+                       
+              </ul>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://http2.mlstatic.com/D_NQ_NP_733990-MLA32689710378_102019-O.jpg" class="d-block w-50 h-50"  alt="zapatilla">
-            </div>
-            <div class="carousel-item">
-              <img src="data:image/jpeg;base64,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" class="d-block w-50 h-50" alt="termica">
-            </div>
-            <div class="carousel-item">
-              <img src="img/capacitor.jpg" class=" d-block w-50 h-50" alt="zapatilla">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!-- fin carrusel -->
-        <hr>
+      </section>
         <footer>
             Derechos reservados - 2021
         </footer>
